@@ -1,0 +1,17 @@
+﻿<div class="col">
+    <div class="card">
+        <a asp-controller="Pies" asp-action="Details" asp-route-id="@Model.PieId"><image src="@Model.ImageThumbnailUrl" class="card-img-top" alt="@Model.PieName"></image></a>
+        <div class="card-body">
+            <h4><a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-id="@Model.PieId" class="btn btn-primary">Add to cart</a></h4> 
+            @if (ViewData["Role"]?.ToString() == "Admin")
+            {
+                <h5 class="text-start"><a asp-controller="Pies" asp-action="Edit" asp-route-id="@Model.PieId" class="btn btn-primary">Edit</a></h5>
+            }
+            <div class="d-flex justify-content-between mt-2">
+                <h2 class="text-start"><a asp-controller="Pies" asp-action="Details" asp-route-id="@Model.PieId">@Model.PieName</a></h2>
+                <h5 class="text-nowrap">£@Model.Price.ToString()</h5>
+               
+             </div>
+        </div>
+    </div>
+</div>
