@@ -27,10 +27,5 @@ namespace AdamsShop.Models
 
         public DbSet<OrderDetail> OrderDetails { get; set; }
 
-        public DbSet<MyUser> MyUsers { get; set; }
-
-        public DbSet<MyRole> MyRoles { get; set; }
-
-        public DbSet<RoleAssignedToUser> RoleAssignedToUsers { get; set;}
     }
 } 

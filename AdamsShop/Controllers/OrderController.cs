@@ -1,13 +1,11 @@
 ﻿using AdamsShop.DataModel;
 using AdamsShop.Models;
-using AdamsShop.Utilities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AdamsShop.Controllers
 {
-    //[Authorize]
-    [MyAuthentication]
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly IOrderRepository _orderRepository;
