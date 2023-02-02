@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AdamsShop.Controllers
 {
-    //[Authorize]
     [MyAuthentication]
     public class OrderController : Controller
     {

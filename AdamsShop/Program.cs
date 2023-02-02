@@ -56,10 +56,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{returnUrl}");
-
 app.MapRazorPages();
 
 DbInitializer.Seed(app);
