@@ -18,9 +18,6 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IPieRepository, PieRepository>();
 builder.Services.AddScoped<IShoppingCartProvider, ShoppingCartProvider>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IMyPasswordHasher, MyPasswordHasher>();
-builder.Services.AddScoped<IMyRoleRepository, MyRoleRepository>();
 
 builder.Services.AddSession();
 builder.Services.AddHttpContextAccessor();
